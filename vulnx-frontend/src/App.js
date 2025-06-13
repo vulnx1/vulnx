@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -63,7 +63,7 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
