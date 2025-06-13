@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: #764ba2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        .content {
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 0 0 5px 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to VulnX!</h1>
+        </div>
+        <div class="content">
+            <p>Dear {{ email }},</p>
+            <p>Thank you for subscribing to VulnX! We're excited to have you join our community.</p>
+            <p>You'll be among the first to know when we launch and receive exclusive updates about our platform.</p>
+            <p>Stay tuned for more exciting news!</p>
+            <p>Best regards,<br>The VulnX Team</p>
+        </div>
+        <div class="footer">
+            <p>This email was sent to {{ email }}. If you didn't subscribe to VulnX, please ignore this email.</p>
+        </div>
+    </div>
+</body>
+</html> 
